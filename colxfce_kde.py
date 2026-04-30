@@ -162,7 +162,7 @@ def start_core():
     env = os.environ.copy()
     env["DISPLAY"] = ":1"
 
-    run_bg_env("dbus-launch startkde", "KDE starter", env)
+    run_bg_env("dbus-launch startplasma-x11", "KDE starter", env)
     time.sleep(5)
 
     run_bg("x11vnc -display :1 -nopw -forever -shared", "VNC")
