@@ -135,7 +135,7 @@ def install():
 
     r1 = run("sudo apt update", "packages are being updated")
 
-    r2 = run("sudo apt install -y kde-standard kde-terminal kde-spectacle x11vnc xvfb dbus-x11 wget curl novnc websockify", "almost all the necessary equipment is being installed")
+    r2 = run("sudo apt install -y kde-standard konsole kde-spectacle x11vnc xvfb dbus-x11 wget curl novnc websockify", "almost all the necessary equipment is being installed")
 
 
     if not shutil.which("cloudflared"):
