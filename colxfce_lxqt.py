@@ -9,7 +9,7 @@ import threading
 
 os.makedirs("log", exist_ok=True)
 start_time = time.strftime("%Y%m%d-%H%M%S")
-LOG_FILE = f"log/colxfce_{start_time}_startup.log"
+LOG_FILE = f"log/colxfce_lxqt_{start_time}_startup.log"
 
 with open(LOG_FILE, "w", encoding="utf-8") as f:
     f.write("=== COLXFCE STARTUP LOG ===\n")
@@ -192,7 +192,7 @@ if __name__ == "__main__":
     mode = sys.argv[1]
 
     print("colxfce: ColXFCE is starting...")
-    print(f"i: Log file is log/colxfce_{start_time}_startup.log")
+    print(f"i: Log file is log/colxfce_lxqt_{start_time}_startup.log")
     install_code = install()
 
     if install_code != 0:
